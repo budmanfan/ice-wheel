@@ -2,4 +2,6 @@
 Highpowerbreak	48V/2mA	
 lowpower	pulldown/0.6mA	
 		
-speed	24V	PWM ~8kHz-> spannungsteiler, tiefpass
+speedmeter	24V	PWM ~8kHz-> spannungsteiler, tiefpass
+
+3 speed 	?? ausprobiert: pulldown,5V,24V,48V

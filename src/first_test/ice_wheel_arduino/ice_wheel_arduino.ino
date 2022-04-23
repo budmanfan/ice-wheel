@@ -11,8 +11,8 @@ void setup() {
 
 void loop() {
 
-  
-  
+  analogWrite(aoutPin, 0);
+  /*
   if(dir){
     i = i + speed_step;
   } else {
@@ -29,5 +29,5 @@ void loop() {
   
   analogWrite(aoutPin, i);
   delay(pause);
-  
+  */
 }
