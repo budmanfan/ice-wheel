@@ -1,0 +1,5 @@
+		
+Highpowerbreak	48V/2mA	
+lowpower	pulldown/0.6mA	
+		
+speed	24V	PWM ~8kHz-> spannungsteiler, tiefpass
