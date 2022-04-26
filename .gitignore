@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+schematics\project\ice_wheel-backups
+schematics\project\fp-info-cache
+schematics\project\ice_wheel.kicad_prl
