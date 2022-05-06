@@ -25,10 +25,12 @@ elapsedMillis since_last_hall_change;
 
 // Test Variables
 elapsedMillis sinceStart;
+elapsedMicros sincePrint;
 elapsedMicros timestamp;
 bool timestamp_reset = false;
 
 int test_int = 0;
+bool test_bool = LOW;
 
 
 void setup() {
@@ -65,29 +67,72 @@ void loop() {
   }
 
   // Write Poti Value to Speed Output
-  val_poti = analogRead(pin_ain_poti);
+  //val_poti = analogRead(27);
+  //delay(1);
   //val_speed_8uint = val_poti / 4;  
   //analogWrite(pin_aout_speed, 100);
 
-  if(sinceStart > 3000){    
+  
+  if(sinceStart < 1000){
+    test_int = 150;
+  }
+  if(sinceStart > 1000){
+    test_int = 150;
+  }
+  if(sinceStart > 1500){
+    test_int = 160;
+  }
+  if(sinceStart > 2000){
+    test_int = 170;
+  }
+  if(sinceStart > 2500){
+    test_int = 180;
+  }
+  if(sinceStart > 3000){
+    test_int = 190;
+  }
+  if(sinceStart > 3500){
+    test_int = 200;
+  }
+  if(sinceStart > 4000){
+    test_int = 210;
+  }
+  if(sinceStart > 4500){
+    test_int = 220;
+  }
+  if(sinceStart > 5000){
+    test_int = 230;
+  }
+  if(sinceStart > 5500){
+    test_int = 240;
+  }
+  if(sinceStart > 6000){
+    test_int = 250;
+  }
+  if(sinceStart > 7000){
     test_int = 0;
   }
-  if(sinceStart < 1000){
-    test_int = 100;
-  }
 
-  if(sinceStart > 2000 && !timestamp_reset){
+  test_bool = in_hall0.read();
+
+  if(sinceStart > 1000 && !timestamp_reset){
     timestamp = 0;
     timestamp_reset = true;
   }
-  if(sinceStart > 2000 && sinceStart < 6000){
-    Serial.print(timestamp);
-    Serial.print(",");
-    Serial.print(test_int);
-    Serial.print(",");
-    Serial.println(val_speed_Hz);
+  if(sinceStart > 1000 && sinceStart < 6500){
+    if(sincePrint >= 100) {
+      sincePrint = 0;
+      Serial.print(timestamp);
+      Serial.print(",");
+      Serial.print(test_int);
+      Serial.print(",");
+      Serial.print(test_bool);
+      Serial.print(",");
+      Serial.println(val_speed_Hz);
+    }    
   }  
 
   analogWrite(pin_aout_speed, test_int);
+  //digitalWrite(pin_dout_mosfet0, test_bool);
   //Serial.println(val_speed_Hz);
 }
