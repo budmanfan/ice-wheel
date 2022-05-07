@@ -2,7 +2,7 @@
 Highpowerbreak	48V/2mA setzten
 lowpower	pulldown/0.6mA	auf GND ziehen
 		
-speedmeter	24V	PWM ~8kHz-> spannungsteiler, tiefpass
+speedmeter	24V	PWM ~8kHz-> spannungsteiler, tiefpass nicht brauchbar
 
 3 speed 	beide 5V, einer von beiden auf GND ziehen in stillstand
 

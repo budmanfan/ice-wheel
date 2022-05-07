@@ -1,0 +1,21 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid bb02e651-dd52-49b6-8cdf-ae9ec7908e95)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (text "- RS485/Can to communicate with teensy\n- connect ntc\n\n- UART to bluetooth?\n- Light board port?"
+    (at 105.41 87.63 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid fec5bfdc-4ec3-4eb5-b7a5-8d851c3cf3b1)
+  )
+
+  (hierarchical_label "RS485_BMS" (shape bidirectional) (at 171.45 52.07 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid d1be632e-1425-46b5-b138-1bd878053ebf)
+  )
+)

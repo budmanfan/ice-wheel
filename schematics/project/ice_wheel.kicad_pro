@@ -320,6 +320,38 @@
     [
       "9538e4ed-27e6-4c37-b989-9859dc0d49e8",
       ""
+    ],
+    [
+      "a8032040-4653-49ee-95a3-c7cb36f467f5",
+      "Teensy"
+    ],
+    [
+      "e170b43f-4cff-4505-8548-8011a1acf870",
+      "Motor Controller"
+    ],
+    [
+      "8d3cd55d-432a-4c85-abb6-9da52b5bd4a7",
+      "Bluetooth"
+    ],
+    [
+      "7ec07ddd-7068-43d0-9fd5-859900c03ac0",
+      "Battery Management System"
+    ],
+    [
+      "5a0146b3-5bc1-4990-91bf-6d52861a1775",
+      "Prop Shield"
+    ],
+    [
+      "e60c338a-4f31-4486-88a3-b5454f96f251",
+      "Misc"
+    ],
+    [
+      "0a5cbc8c-d3cc-44f1-bc1d-4f5ea60978a2",
+      "Dig2Analog"
+    ],
+    [
+      "399011ef-6c2c-4658-98a5-f7d9a460c5cf",
+      "3 Speed"
     ]
   ],
   "text_variables": {}

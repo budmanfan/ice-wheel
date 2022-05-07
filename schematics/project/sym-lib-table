@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "IceWheelLib")(type "KiCad")(uri "${KIPRJMOD}/libraries/IceWheelLib.kicad_sym")(options "")(descr ""))
+)
