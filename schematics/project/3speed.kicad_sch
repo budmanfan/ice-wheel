@@ -1,6 +1,6 @@
 (kicad_sch (version 20211123) (generator eeschema)
 
-  (uuid 6b6cf5ed-0a9c-4e43-9c97-a459ca785c3f)
+  (uuid 7e8731e7-cf30-4aeb-a6a0-52983cfe075f)
 
   (paper "A4")
 
@@ -259,7 +259,7 @@
   (symbol (lib_id "Device:R") (at 111.76 81.28 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 431127f6-185c-4923-920f-b87ab72bdfe6)
-    (property "Reference" "R?" (id 0) (at 111.76 74.93 90))
+    (property "Reference" "R4" (id 0) (at 111.76 74.93 90))
     (property "Value" "1k" (id 1) (at 111.76 77.47 90))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 111.76 79.502 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -274,7 +274,7 @@
   (symbol (lib_id "power:GND") (at 128.27 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4b1e3bee-bf5a-4343-a580-85a6e9e522b4)
-    (property "Reference" "#PWR?" (id 0) (at 128.27 97.79 0)
+    (property "Reference" "#PWR0109" (id 0) (at 128.27 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 128.27 96.52 0))
@@ -290,7 +290,7 @@
   (symbol (lib_id "Transistor_FET:BSS123") (at 125.73 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 6a7b4ba3-cba1-4d33-a4ba-e14fac836db2)
-    (property "Reference" "Q?" (id 0) (at 132.08 80.0099 0)
+    (property "Reference" "Q1" (id 0) (at 132.08 80.0099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BSS123" (id 1) (at 132.08 82.5499 0)

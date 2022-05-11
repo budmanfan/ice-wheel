@@ -1,6 +1,6 @@
 (kicad_sch (version 20211123) (generator eeschema)
 
-  (uuid 5dac3d0a-3ca0-488a-9739-aacc3f237458)
+  (uuid 7a11198a-56fd-401f-84ce-4b37af26768a)
 
   (paper "A4")
 
@@ -8,11 +8,11 @@
   )
 
 
-  (hierarchical_label "bt_tx" (shape input) (at 200.66 44.45 0)
+  (hierarchical_label "bt_tx" (shape input) (at 120.65 85.09 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 56cd4a3d-d76f-4905-a740-cc0007fddb65)
   )
-  (hierarchical_label "bt_rx" (shape output) (at 200.66 52.07 0)
+  (hierarchical_label "bt_rx" (shape output) (at 120.65 87.63 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 8cb954a3-8072-4e93-bd5c-ed139a41b82a)
   )
