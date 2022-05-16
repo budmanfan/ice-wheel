@@ -167,7 +167,7 @@
     (uuid f6197e9a-8021-4f11-9a88-cca885098493)
   )
 
-  (text "- Footpad sensor\nzusätzlich/VORIGE eingänge (analog/digital)\n-2 bis 3 analoge eingänge für onboard poti\n- status leds\n- knopfbatterie\n\n\n- vlt signal hauptschalter\n- nfc chip für diebstahlschutz\n"
+  (text "- Footpad sensor\nzusätzlich/VORIGE eingänge (analog/digital)\n-2 bis 3 analoge eingänge für onboard poti\n- status leds\n- knopfbatterie\n- Speaker\n\n\n- vlt signal hauptschalter\n- nfc chip für diebstahlschutz\n"
     (at 124.46 55.88 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1719fbe9-fb54-43f5-8575-59b51daf42ce)
@@ -181,7 +181,7 @@
   (symbol (lib_id "power:+5V") (at 223.52 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 7be00660-70c3-4d71-b928-74438d1ae1d3)
-    (property "Reference" "#PWR?" (id 0) (at 223.52 41.91 0)
+    (property "Reference" "#PWR0136" (id 0) (at 223.52 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 223.52 33.02 0))
@@ -197,7 +197,7 @@
   (symbol (lib_id "power:GND") (at 223.52 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid acb2693f-262b-438d-bb6d-1ff4c2e6f3b7)
-    (property "Reference" "#PWR?" (id 0) (at 223.52 68.58 0)
+    (property "Reference" "#PWR0137" (id 0) (at 223.52 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 223.52 67.31 0))
@@ -213,7 +213,7 @@
   (symbol (lib_id "Device:R") (at 223.52 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b3da7ec5-be45-4f10-b30c-666a0e9fca83)
-    (property "Reference" "R?" (id 0) (at 226.06 54.6099 0)
+    (property "Reference" "R13" (id 0) (at 226.06 54.6099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R" (id 1) (at 226.06 57.1499 0)

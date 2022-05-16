@@ -7,11 +7,53 @@
   (lib_symbols
   )
 
+  (bus_alias "RS485_BMS" (members "RS485_A" "RS485_B"))
+
+  (bus_entry (at 153.67 52.07) (size -2.54 2.54)
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 27c04455-e7f7-413a-b557-5dcfb9f6fad0)
+  )
+  (bus_entry (at 153.67 54.61) (size -2.54 2.54)
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 8833aa8f-3359-4a9a-bb71-432239cfeeba)
+  )
+
+  (bus (pts (xy 171.45 52.07) (xy 153.67 52.07))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 5292d1d2-c749-471b-a948-4dc81069660a)
+  )
+
+  (wire (pts (xy 132.08 54.61) (xy 151.13 54.61))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 733a9aab-9cca-4642-9091-2f79440f77dd)
+  )
+  (bus (pts (xy 153.67 52.07) (xy 153.67 54.61))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 9628ed53-ded5-4a87-b71d-89e2a92a8ed1)
+  )
+
+  (wire (pts (xy 132.08 57.15) (xy 151.13 57.15))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 98999fb8-202e-4e96-82b5-2db4521bd7b6)
+  )
 
   (text "- RS485/Can to communicate with teensy\n- connect ntc\n\n- UART to bluetooth?\n- Light board port?"
     (at 105.41 87.63 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid fec5bfdc-4ec3-4eb5-b7a5-8d851c3cf3b1)
+  )
+
+  (label "{RS485_BMS}" (at 156.21 52.07 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 7d0ad5aa-bf5f-4fd7-a42a-dea99aeb2f96)
+  )
+  (label "RS485_A" (at 132.08 54.61 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b534b5ea-425b-4b3f-a1b5-afd065c6a32f)
+  )
+  (label "RS485_B" (at 132.08 57.15 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid ecfaed2a-d6de-4d7f-9f11-5a04e83767b7)
   )
 
   (hierarchical_label "RS485_BMS" (shape bidirectional) (at 171.45 52.07 0)

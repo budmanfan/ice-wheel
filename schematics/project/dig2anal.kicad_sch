@@ -357,6 +357,15 @@
     (uuid f53a9de1-0b39-4d2d-becd-01d557c9cde5)
   )
 
+  (hierarchical_label "Analog" (shape output) (at 209.55 83.82 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid a3390779-6f64-4fb8-bdc5-e8692c62350b)
+  )
+  (hierarchical_label "PWM" (shape input) (at 96.52 81.28 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid bba46489-7b74-4703-b079-c6da14b4e863)
+  )
+
   (symbol (lib_id "power:GND") (at 158.75 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 1c7df0e1-5e74-4f55-9a92-ae3f5656d2ca)
