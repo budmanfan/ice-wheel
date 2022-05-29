@@ -55,5 +55,7 @@ schematics/project/ice_wheel-backups/
 schematics/project/fp-info-cache
 schematics/project/ice_wheel.kicad_prl
 schematics/project/#auto_saved_files#
+schematics/project/libraries/BT_Module/
+schematics/project/libraries/3dModels/
 
 */.ipynb_checkpoints/*
