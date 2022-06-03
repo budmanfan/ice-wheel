@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "IceWheelLib")(type "KiCad")(uri "${KIPRJMOD}/libraries/IceWheelLib.pretty")(options "")(descr ""))
+  (lib (name "libraries")(type "KiCad")(uri "${KIPRJMOD}/libraries.pretty")(options "")(descr ""))
+)
