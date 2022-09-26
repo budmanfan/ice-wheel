@@ -309,6 +309,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 166b0037-9598-43a8-8754-bb940da66fe7)
   )
+  (bus (pts (xy 153.67 90.17) (xy 166.37 90.17))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 1df14d1b-ee1d-4144-8cbe-197035ecce35)
+  )
   (bus (pts (xy 161.29 73.66) (xy 161.29 80.01))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 2a78aa82-826a-4dc3-8d23-8068c0d0defe)
@@ -386,6 +390,10 @@
   (wire (pts (xy 69.85 25.4) (xy 69.85 22.86))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid b655f27c-2d26-4a02-aba7-69a2d037358e)
+  )
+  (bus (pts (xy 153.67 87.63) (xy 166.37 87.63))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid b6695063-e71e-441f-8085-3756b33c4caa)
   )
   (bus (pts (xy 161.29 80.01) (xy 166.37 80.01))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -483,7 +491,7 @@
     (property "Value" "Conn_01x02" (id 1) (at 80.01 27.9399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 77.47 25.4 0)
+    (property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" (id 2) (at 77.47 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 77.47 25.4 0)
@@ -502,7 +510,7 @@
     (property "Value" "Conn_01x02" (id 1) (at 78.74 55.8799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_JST:JST_SHL_SM02B-SHLS-TF_1x02-1MP_P1.00mm_Horizontal" (id 2) (at 76.2 53.34 0)
+    (property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" (id 2) (at 76.2 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 76.2 53.34 0)
@@ -634,6 +642,14 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 3414eb7d-15b3-45e9-a701-1d0baf6784a5)
     )
+    (pin "digital_reserve" bidirectional (at 153.67 87.63 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 7237d524-c126-484e-8e31-b5deae35dc4f)
+    )
+    (pin "analog_reserve" bidirectional (at 153.67 90.17 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid b6ad68f6-af67-478e-a4df-7be2a20fad8e)
+    )
   )
 
   (sheet (at 67.31 101.6) (size 29.21 48.26) (fields_autoplaced)
@@ -701,6 +717,14 @@
     (pin "poti_IN" output (at 166.37 85.09 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid ea0a4098-daae-42ea-99eb-c5dab1fc2c30)
+    )
+    (pin "analog_reserve" bidirectional (at 166.37 90.17 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 6e0a25e4-0f28-417f-a742-ee68213350ac)
+    )
+    (pin "digital_reserve" bidirectional (at 166.37 87.63 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid fd8044a9-d159-4116-83d5-9e24d788d3a7)
     )
   )
 
@@ -918,7 +942,13 @@
       (reference "#PWR0147") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/e170b43f-4cff-4505-8548-8011a1acf870/fd47a1e5-df7e-4eee-a276-aa165209f13d"
-      (reference "#PWR?") (unit 1) (value "+48V") (footprint "")
+      (reference "#PWR0148") (unit 1) (value "+48V") (footprint "")
+    )
+    (path "/e60c338a-4f31-4486-88a3-b5454f96f251/787500e1-f92b-4a71-91ed-aadf5df66a1a"
+      (reference "#PWR0149") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/e60c338a-4f31-4486-88a3-b5454f96f251/71b3e57e-4aff-4ae1-b69e-3eadce93f575"
+      (reference "#PWR0150") (unit 1) (value "GND") (footprint "")
     )
     (path "/e170b43f-4cff-4505-8548-8011a1acf870/0a5cbc8c-d3cc-44f1-bc1d-4f5ea60978a2/654a37c9-46df-4b82-9933-5b4bab00a4da"
       (reference "C1") (unit 1) (value "C") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -971,32 +1001,41 @@
     (path "/e60c338a-4f31-4486-88a3-b5454f96f251/27cbd260-f809-4afe-a6e0-ac6b5fcf08a3"
       (reference "D6") (unit 1) (value "D3V3S1U2LP1610-7") (footprint "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
+    (path "/e60c338a-4f31-4486-88a3-b5454f96f251/848f00ae-2b51-4a13-ba2b-b1d2cf17c1a6"
+      (reference "D7") (unit 1) (value "D3V3S1U2LP1610-7") (footprint "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+    )
+    (path "/e60c338a-4f31-4486-88a3-b5454f96f251/d1560112-0392-430e-8f8c-a61a68a9e881"
+      (reference "D8") (unit 1) (value "D3V3S1U2LP1610-7") (footprint "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+    )
     (path "/da0d5712-30e0-4d75-a17b-09a309cdb0af"
-      (reference "J1") (unit 1) (value "Conn_01x02") (footprint "Connector_JST:JST_SHL_SM02B-SHLS-TF_1x02-1MP_P1.00mm_Horizontal")
+      (reference "J1") (unit 1) (value "Conn_01x02") (footprint "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal")
     )
     (path "/510d7d1a-ff03-4dad-9887-a4cfb9760797"
-      (reference "J2") (unit 1) (value "Conn_01x02") (footprint "")
+      (reference "J2") (unit 1) (value "Conn_01x02") (footprint "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal")
     )
     (path "/e60c338a-4f31-4486-88a3-b5454f96f251/c1085153-8f02-438d-ba95-d4b7d78aa733"
-      (reference "J3") (unit 1) (value "Conn_01x06") (footprint "")
+      (reference "J3") (unit 1) (value "Conn_01x06") (footprint "Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal")
     )
     (path "/e60c338a-4f31-4486-88a3-b5454f96f251/d6d0d868-e525-4399-bd4b-858390f2d3e6"
-      (reference "J4") (unit 1) (value "Conn_01x02") (footprint "")
+      (reference "J4") (unit 1) (value "Conn_01x02") (footprint "Connector_JST:JST_SHL_SM02B-SHLS-TF_1x02-1MP_P1.00mm_Horizontal")
     )
     (path "/e60c338a-4f31-4486-88a3-b5454f96f251/e31a5680-510d-4c8b-a1a2-e25dc53ad7a6"
-      (reference "J5") (unit 1) (value "Conn_01x03") (footprint "")
+      (reference "J5") (unit 1) (value "Conn_01x03") (footprint "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal")
     )
     (path "/e60c338a-4f31-4486-88a3-b5454f96f251/c3347128-bd85-463f-99a3-a170653c0a78"
-      (reference "J6") (unit 1) (value "Conn_01x03") (footprint "")
+      (reference "J6") (unit 1) (value "Conn_01x03") (footprint "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal")
     )
     (path "/e60c338a-4f31-4486-88a3-b5454f96f251/59eb5277-81e5-44a0-8d7f-fbaaca11b3ac"
-      (reference "J7") (unit 1) (value "Conn_01x03") (footprint "")
+      (reference "J7") (unit 1) (value "Conn_01x03") (footprint "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal")
     )
     (path "/e170b43f-4cff-4505-8548-8011a1acf870/37d09877-6887-4f3d-80c6-a82cacc84ce0"
       (reference "J8") (unit 1) (value "Conn_02x06_Odd_Even") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical_SMD")
     )
     (path "/7ec07ddd-7068-43d0-9fd5-859900c03ac0/ef9e4a68-783a-4a05-ae16-76eb42d17d85"
-      (reference "J9") (unit 1) (value "Conn_01x03") (footprint "")
+      (reference "J9") (unit 1) (value "Conn_01x03") (footprint "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal")
+    )
+    (path "/e170b43f-4cff-4505-8548-8011a1acf870/87be6bbd-26ab-4c15-97d2-790a4b9e56c6"
+      (reference "J10") (unit 1) (value "Conn_01x05") (footprint "Connector_JST:JST_SH_SM05B-SRSS-TB_1x05-1MP_P1.00mm_Horizontal")
     )
     (path "/e170b43f-4cff-4505-8548-8011a1acf870/d87a0ee4-8016-40e3-98eb-7d78f313da4f"
       (reference "Q1") (unit 1) (value "BSS123") (footprint "Package_TO_SOT_SMD:SOT-23")

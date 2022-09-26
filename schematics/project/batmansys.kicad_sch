@@ -187,7 +187,7 @@
     (property "Value" "Conn_01x03" (id 1) (at 196.85 59.6899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 194.31 58.42 0)
+    (property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal" (id 2) (at 194.31 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 194.31 58.42 0)
